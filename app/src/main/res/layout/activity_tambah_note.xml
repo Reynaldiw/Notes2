@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahNoteActivity"
+    android:paddingLeft="@dimen/activity_margin_16dp_horizontal"
+    android:paddingBottom="@dimen/activity_margin16dp_vertical"
+    android:paddingTop="@dimen/activity_margin16dp_vertical"
+    android:paddingRight="@dimen/activity_margin_16dp_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/judul" />
+
+    <EditText
+        android:id="@+id/edt_isi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/isi_catatan"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>
